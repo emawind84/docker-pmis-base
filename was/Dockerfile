@@ -1,7 +1,7 @@
 FROM dev.sangah.com:5043/tomcat-base
 
 COPY server.xml.template /usr/local/tomcat/conf/
-ONBUILD COPY ./ /usr/local/src/
+ONBUILD COPY stnd_pmis.war /usr/local/src/
 
 # force locale to Korean
 ENV LC_ALL=ko_KR.UTF8
